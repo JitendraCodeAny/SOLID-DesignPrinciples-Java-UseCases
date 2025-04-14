@@ -14,7 +14,7 @@ These are high-level guidelines also can be used to write predictable, clean, re
 
 --------------
 
-1. S -> Single Responsibility Principle -
+1. SRP -> Single Responsibility Principle -
 A class should contain only one functionality.
 When code follow SRP, code will be easier to read, understand, test, and debug
 
@@ -27,7 +27,7 @@ Code does not follow SRP - SRPViolation2.java
 Code follows SRP - SRP2.java
 
 
-2. O-> Open/Closed Principle - Open for extension and closed for modification.
+2. OCP -> Open/Closed Principle - Open for extension and closed for modification.
 We should be able add a new functionality in a class or module without modifying its existing code. 
 When follow OCP, it helps to add features without breaking existing code
 
@@ -35,7 +35,7 @@ Java code example -1
 Code does not follow OCP - OCPViolation.java
 Code follows OCP - OCP.java
 
-3. L-> Liskov Substitution Principle
+3. LSP -> Liskov Substitution Principle
 
 When subclass objects substitute super class objects and override methods
 then should not break existing superclass functionality.
@@ -51,7 +51,7 @@ Code does not follow LSP - LSPViolation2.java
 Code follows LSP - LSP2.java
 
 
-4. I-> Interface Segregation Principle 
+4. ISP -> Interface Segregation Principle 
 
 A class should not be forced to implement interface and its methods, 
 which are not needed and irrelevant.
@@ -67,7 +67,7 @@ Code does not follow ISP - ISPViolation2.java
 Code follows ISP - ISP2.java
 
 
-5. D-> Dependency Inversion Principle
+5. DIP-> Dependency Inversion Principle
 
 High level modules (class) should not interact with low level modules (class)
 Both high level module (class) and low level module(class) should interact with 
