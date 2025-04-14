@@ -5,6 +5,14 @@
 
 ### Description 
 
+SOLID design principles are a set of five principles that helps to write code that is easy to read and understand and test, maintainable and flexible 
+
+Increase Productivity in Software Development
+
+These are high-level guidelines also can be used to write predictable, clean, readable and modular code that will help to safely refactor, reduce  testing time, easly find bugs, during enhancement and maintainance phase. 
+
+###
+
 ```
 1. SRP -> Single Responsibility Principle -
 A class should contain only one functionality.
@@ -135,5 +143,6 @@ Java code example -1
 Java code example -2 
 	Code does not follow DIP - DIPViolation2.java
 	Code follows DIP - DIP2.java
+
  
 ```
