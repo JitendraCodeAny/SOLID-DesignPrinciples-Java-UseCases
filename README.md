@@ -5,7 +5,7 @@
 
 ### Description 
 
-SOLID design principles are a set of five principles that helps to write code that is easy to read and understand and test, maintainable and flexible 
+SOLID design principles are a set of five principles that helps to write code that is easy to read and understand and test, maintainable and flexible code
 
 Increase Productivity in Software Development
 
