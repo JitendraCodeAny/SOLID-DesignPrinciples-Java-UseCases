@@ -13,9 +13,9 @@ package com.jitendra.dp;
 	Such as Singer class implementing Person, has to implement all the methods sing(), dance() and perfomMusic() 
 	which may not be actually needed. So this code does not follow ISP.
 	
-	Challenges with code that does not follow SRP-
+	Challenges with code that does not follow ISP-
 	- It force classes to implement unused methods
-	- Large interface contain multiple functionalities so also violates SRP
+	- Large interface contain multiple functionalities so also violates ISP
 	- Very prone to bug as classes implementing unused method may be left empty, 
 	  or incorrectly implement or may crash.
 	- Difficult to test, as needs to test all the unused functionality as well
