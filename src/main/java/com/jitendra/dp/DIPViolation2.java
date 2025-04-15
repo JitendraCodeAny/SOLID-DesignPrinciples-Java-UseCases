@@ -1,46 +1,44 @@
 package com.jitendra.dp;
 
 //Dependancy Inversion principle
-//High level modules/class should not depend on low level modules/class (concrete class)
-//Both should depend on abstractions to comply with DI principle
+//Class should interact with abstractions not concrete implementations. 
 
 /*
-	This code contains HRService class which is high level class, directly interact
-	with low level class ManagerRecruiter by injecting, which creates tight
-	coupling. 
+	This code contains PaymentService class which is high level class, directly interact
+	with concrete class CreditCardPayment which creates tight coupling. 
 	
-	Challenges: For any other recruiter to support such as LeadRecruiter, the
-	HRService class is to be modified, which is inflexible and hard to test and
+	Challenges: For any other recruiter to support such as DebitCardPayment, the
+	Payment class is to be modified, which is inflexible and hard to test and
 	extend.
 	
-	Here both HRService and ManagerRecruiter class interact with abstraction.
+	Here Payment class interact with concrete class CreditCardPayment.
 	So, this code violates DIP
 */
 
 
 // High level module
-class HRService { // high level class
-	private ManagerRecruiter managerRecruiter; // low level class
+class PaymentService { // high level class
+	private CreditCardPayment creditCardPayment; // low level class
 
-	public HRService() { // dependancy (low level class) injected
-		managerRecruiter = new ManagerRecruiter(); 
+	public Payment() { // dependancy (low level class) injected
+		creditCardPayment = new CreditCardPayment(); 
 	}
 
-	public void hire() {
-		managerRecruiter.hire();
+	public void process() {
+		creditCardPayment.process();
 	}
 }
 
 // low level module
-class ManagerRecruiter {
-	public void hire() {
-		System.out.println("Hiring Manager");
+class CreditCardPayment extends Payment {
+	public void process(double amount) {
+		System.out.println("Credit card payment process amount for " + amount);
 	}
 }
 
 public class DIPViolation2 {
 	public static void main(String[] args) {
-		HRService hr = new HRService();
-		hr.hire();
-	}d
+		Payment payment = new CreditCardPayment();
+		payment.process();
+	}
 }
