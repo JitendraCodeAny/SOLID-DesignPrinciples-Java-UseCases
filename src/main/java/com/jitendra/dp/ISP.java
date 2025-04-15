@@ -1,7 +1,7 @@
 package com.jitendra.dp;
 // ISP - Interface Segregation Principle
 // A class should not be forced to use unnecessary large interface and all its methods.
-// Rather, split large interface into smaller ones and use the one which is usefull.
+// Rather, split large interface into smaller ones and use them which are usefull.
 // refer class ISPViolation.java that violates ISP
 
 /*
