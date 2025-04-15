@@ -4,7 +4,8 @@ package com.jitendra.dp;
 	ISP - Interface Segregation Principle
 	
 	A class should not be forced to use unnecessary large interface and all its methods.
-        Rather, split large interface into smaller ones and use them which are usefull.
+        Instead, split the large interface into smaller specific interfaces and classes
+	to implement them based on their interest and have methods which are actually needed by them.
 	
 	Instead, split the large interface into smaller specific interfaces and classes
 	to implement them based on their interest and have methods which are actually needed by them.
