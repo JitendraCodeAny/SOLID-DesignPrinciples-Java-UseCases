@@ -4,19 +4,16 @@ package com.jitendra.dp;
 //Refer class DIPViolation.java that violates DIP
 
 /*
-     High level modules (class) should not interact with low level modules (class)
-	 Both high level module (class) and low level module(class) should interact with 
-	 abstraction to follow DI principle.
-*/
-
-/*
-	For any other payment type to support such as DebitCardPayment, PaymentService class
-	will not be modified
-	Here, High level class PaymentService does not interact with low level class such as 
-	CreditCardPayment and so dependancy injection is separated from class PaymentService 
-	It is compilant with DIP
-	Benefit: exensible, maintainable, scalable and easy to test
-	it helps to write loosely coupled code which will be easier to to mock during unit test and maintain
+    Class should interact with abstractions not concrete implementations
+	
+        Here PaymentService class does not interact with complete class DebitCardPayment
+	rather it interact with abstract class Payment.
+ 	So for any other payment type to support such as DebitCardPayment.
+	PaymentService class will not be modified.
+	Here, class interact with abstraction Payment. It does not interact with concrete class such as CreditCardPayment. So, it is compilant with DIP
+	
+	Benefit: exensible, maintainable, scalable and easy to test.
+	It helps to write loosely coupled code which will be easier to to mock during unit test and maintain
 */
 
 //Abstraction (Abstract class)
