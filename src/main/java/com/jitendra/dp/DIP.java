@@ -4,18 +4,17 @@ package com.jitendra.dp;
 // Refer class DIPViolation.java that violates DIP
 
 /*
-	 High level modules (class) should not interact with low level modules (class)
-	 Both high level module (class) and low level module(class) should interact with 
-	 abstraction to follow DI principle.
-	 Code contains high level class: HRService, interact with abstraction.
-	 instead of interacting low level class, so it is not injected and this dependency is separated
+	 Class should interact with abstractions not concrete implementations
+	 Code contains class: HRService, which interact with abstraction not concrete class
 */
 
 /*
 	For any other recruiter to support such as LeadRecruiter, HRService class will not be modified 
-	Here, High level class HRService does not interact with low level class such as 
-	ManagerRecruiter and so dependancy injection is separated from class HRService 
+	Here, class HRService does not interact with concrete class such as 
+	ManagerRecruiter and this dependancy is separated from class HRService
+ 
 	It is compilant with DIP
+ 
 	Benefit: code is exensible, maintainable, scalable and easy to test
 	it helps to write loosely coupled code which will be easier to to mock during unit test and maintain
 	
