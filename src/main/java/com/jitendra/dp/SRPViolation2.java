@@ -1,12 +1,13 @@
 package com.jitendra.dp;
 
 // SRP - Single Responsibility Principle - 
-// A class should contain only one functionality
+// A class should do only one joby
 // Code does not follow SRP
 
 /*
 	 Code Violates SRP This code logic demonstrates Library management system.
 	 Here, class Librarian contains multiple functionalities, handles multiple things,
+  	 There should be only one purpose to modify a class.
 	 so it violates SRP
 	  
 	 Challenges with code that does not follow SRP -
