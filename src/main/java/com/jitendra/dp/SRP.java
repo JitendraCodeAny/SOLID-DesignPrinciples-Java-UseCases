@@ -2,8 +2,8 @@ package com.jitendra.dp;
 
 /* 
 	 Single Responsibility Principle
-	 A class should contain only one functionality
-	 Code follows SRP
+	 A class should do only one job. There should be only one purpose to modify a class.
+	 This code follows SRP
 	
 	 Here Developer class contains only one functionality, 
 	 similarly Lead and Manager class does
