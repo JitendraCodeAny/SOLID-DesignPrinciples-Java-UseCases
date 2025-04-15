@@ -4,8 +4,7 @@ package com.jitendra.dp;
 // Refer LSPViolation.java that does not support LSP.
 
 /*
-	LSP - When subclass objects substitute super class objects and override methods
-    then should not break existing superclass functionality.
+	LSP - Subclass should not break super class functionality when they replace or substitute superclass
 	
 	In LSPViolation class, BankAccount is super class contains both 'deposit' and 'withdraw'
 	methods and when FixedDepositAccount class extend super class and override its
