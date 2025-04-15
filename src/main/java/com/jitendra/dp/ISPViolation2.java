@@ -3,9 +3,8 @@ package com.jitendra.dp;
 /*
  	ISP - Interface Segregation Principle
 
-	A class should not be forced to implement interface and have methods, 
-	which are not needed and irrelevant.
-	
+	A class should not be forced to use unnecessary large interface and all its methods.
+     
 	Instead, split the large interface into smaller specific interfaces and classes
 	to implement them based on their interest and have methods which are actually needed by them.
 	
