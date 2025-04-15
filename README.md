@@ -7,15 +7,29 @@
 
 SOLID design principles are a set of five principles that helps to write code that is easy to read and understand and test, maintainable and flexible code
 
-Increase Productivity in Software Development
+It increases Productivity in Software Development
 
 These are high-level guidelines also can be used to write predictable, clean, readable and modular code that will help to safely refactor, reduce  testing time, easly find bugs, during enhancement and maintainance phase. 
+
+1. SRP -> Single Responsibility Principle - A class should handle only one job 
+
+2. OCP -> Open/Closed Principle - Open for extension and closed for modification.
+We should be able add new functionality (or extend) without modifying existing code.
+
+3. LSP -> Liskov Substitution Principle - Subclass should not break super class functionality when they replace or substitute superclass
+
+4. ISP -> Interface Segregation Principle 
+A class should not be forced to use unnecessary large interface and all its methods.
+
+5. DIP-> Dependency Inversion Principle
+Class should interact with abstractions not concrete implementations.
 
 ###
 
 ```
 1. SRP -> Single Responsibility Principle -
-A class should contain only one functionality.
+ A class should do only one job.
+ There should be only one purpose to modify a class.
 When code follow SRP, code will be easier to read, understand, test, and debug
 
  Challenges with code that does not follow SRP -
@@ -41,10 +55,11 @@ Java code example -2
 	Code does not follow SRP - SRPViolation2.java
 	Code follows SRP - SRP2.java
 
+-----------------------------
 
 2. OCP -> Open/Closed Principle - Open for extension and closed for modification.
-We should be able add a new functionality in a class or module without modifying its existing code. 
-When follow OCP, it helps to add features without breaking existing code
+We should be able add new functionality (extend) without modifying existing code.
+When follow OCP, it helps to add functionality without breaking existing code.
 
 Challenges with code that does not follow OCP :
 	Cannot extend code without modify base class, so this code is against OCP.
@@ -57,16 +72,19 @@ Key Benefits with code that follows OCP
 Java code example
 	Code does not follow OCP - OCPViolation.java
 	Code follows OCP - OCP.java
+------------------------------------------
 
 3. LSP -> Liskov Substitution Principle
 
-When subclass objects substitute super class objects and override methods
-then should not break existing superclass functionality.
+Subclass should not break super class functionality when they replace or substitute superclass
 
+LIke, An Employee can do coding and meeting both. 
+Developer as an employee can do both as well.
+But Recruiter as an employee can do meeting but cannot do coding.
 When your code follows LSP, subclass behaviour will be predictable, avoiding weird runtime bug with safe inheritance tree
 
 Challenges with code that does not follow LSP :
-	Difficult to test and reuse as subclass behaviour is not predictable
+    Difficult to test and reuse as subclass behaviour is not predictable
     Less maintainable because hard to add new feature
 	
 Key Benefits with code that follows LSP
@@ -82,12 +100,15 @@ Java code example -1
 Java code example -2 
 	Code does not follow LSP - LSPViolation2.java
 	Code follows LSP - LSP2.java
-
+----------------------------------------------------------------------
 
 4. ISP -> Interface Segregation Principle 
 
-A class should not be forced to implement interface and its methods, 
-which are not needed and irrelevant.
+A class should not be forced to use unnecessary large interface and all its methods.
+Rather, split large interface into smaller ones and use the one which is usefull.
+
+Like, A large interface 'Person' with methods such as sing(), dance(), playMusic(), should not be used by class Singer because Singer can sing but may not dance or playMusic so not necessaru. 
+Hence split the Person interface into smaller ones like ISinger, IDancer, IMusician and Singer should only use ISinger interface and use method sing() which is necessary Similarly, Dancer class should use IDancer interface and method dance().
 
 To follow ISP, use focused interfaces that helps creating less boilerplate code and simplified unit tests.
 
@@ -122,9 +143,7 @@ Java code example -2
 
 5. DIP-> Dependency Inversion Principle
 
-High level modules (class) should not interact with low level modules (class)
-Both high level module (class) and low level module(class) should interact with 
-abstraction to follow DI principle.
+Class should interact with abstractions not concrete implementations.
 
 When code follow DIP, it helps to write loosely coupled code which will be easier to to mock during unit test and maintain
 
