@@ -1,19 +1,17 @@
 package com.jitendra.dp;
 
 //Dependancy Inversion principle
-//High level modules/class should not depend on low level modules/class (concrete class)
-//Both should depend on abstractions to comply with DI principle
+/ Class should interact with abstractions not concrete implementations.
 
 /*
 	This code contains HRService class which is high level class, directly interact
-	with low level class ManagerRecruiter by injecting, which creates tight
-	coupling. 
+	with concrete class ManagerRecruiter, which creates tight coupling. 
 	
 	Challenges: For any other recruiter to support such as LeadRecruiter, the
 	HRService class is to be modified, which is inflexible and hard to test and
 	extend.
 	
-	Here both HRService and ManagerRecruiter class interact with abstraction.
+	Here HRService class interact with concrete class ManagerRecruiter.
 	So, this code violates DIP
 */
 
@@ -42,5 +40,5 @@ public class DIPViolation {
 	public static void main(String[] args) {
 		HRService hr = new HRService();
 		hr.hire();
-	}d
+	}
 }
