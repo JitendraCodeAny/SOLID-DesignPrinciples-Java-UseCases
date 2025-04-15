@@ -1,8 +1,8 @@
 package com.jitendra.dp;
 
 // OCP - Open-Closed Principle. Open for extension and closed for modification.
-// We should be able add a new functionality in a class or module without modifying its existing code
-
+//We should be able add new functionality (extend) without modifying existing code.
+//When follow OCP, it helps to add functionality without breaking existing code.
 /*
 	 ReportingService class handles report generation task
 	 When there is a need for new report type generation, 
