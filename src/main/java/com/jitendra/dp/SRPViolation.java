@@ -1,11 +1,12 @@
 package com.jitendra.dp;
 
 // SRP - Single Responsibility Principle -
-// A class should contain only one functionality
+// A class should do only one job
 // Code does not follow SRP
 
  /*
-	 Here, DeveloperTask class contains multiple functionalities
+	 Here, DeveloperTask class contains multiple functionalities. Doing many things
+  	 There should be only one purpose to modify a class.
 	 So it does not follow SRP.
 	 
 	  Challenges with code that does not follow SRP -
