@@ -3,8 +3,7 @@ package com.jitendra.dp;
 //LSP - Liskov Substitution Principle
 
 /*
-  When subclass objects substitute super class objects then overriden methods
-  should not restrict or break existing superclass functionality.
+  Subclass should not break super class functionality when they replace or substitute superclass
   
   Avoid creating subclasses that does not support the super class functionality.
   In this case, subclass don't behave like superclass and restricts or breaks
