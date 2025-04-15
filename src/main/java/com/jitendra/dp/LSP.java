@@ -4,8 +4,7 @@ package com.jitendra.dp;
 // Refer LSPViolation.java that violates LSP.
 
 /*
-	When subclass objects substitute super class objects and override its methods
-    then it should not break superclass functionality.
+	Subclass should not break super class functionality when they replace or substitute superclass
     
 	In LSPViolation class, Employee class contains both coding and meeting methods and when 
 	Recruiter class extend and override the methods it breaks Employee class functionality
