@@ -1,3 +1,4 @@
+# LinkedIn Post - https://www.linkedin.com/pulse/writing-clean-flexible-maintainable-code-solid-design-panigrahy-6fk0c #
 
 # SOLID PRINCIPLES - REAL TIME USE CASES
 
